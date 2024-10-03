@@ -11,6 +11,7 @@ import {Button,
 
 const AddItem = ({addItem, type}) => {
     const INITIAL_VALUES = {
+        id:"",
         name:"",
         description:"",
         recipe:"",
@@ -91,24 +92,9 @@ const AddItem = ({addItem, type}) => {
                     onChange={handleChange}
                     required
                 />
-                </FormGroup>
-                
-                {/* hidden input field to store the type of item */}
-                <FormGroup hidden>
-                    <Label for="type">Type</Label>
-                    <Input
-                        type="text"
-                        name="type"
-                        id="type"
-                        value={type}
-                        onChange={handleChange}
-                        required
-                    />
-                </FormGroup>
-    
-                <br />
-    
+                            
                 <Button type="submit" color="primary">Add Item</Button>
+                            
             </Form>
             </CardBody>
     
