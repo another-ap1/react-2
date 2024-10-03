@@ -21,6 +21,15 @@ class SnackOrBoozeApi {
     return result.data;
   }
 
+  static async addItem(formData,type) {
+    const res = await axios.post(`${BASE_API_URL}/${type}`, formData, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    return res.data;
+  }
+
 }
 
 export default SnackOrBoozeApi;
