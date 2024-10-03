@@ -30,7 +30,7 @@ function App() {
 
   //this will show if the data is still being collected
   if (isLoading) {
-    return <p>Loading &hellip;</p>;
+    return <p>Loading...</p>;
   }
 
   //function for adding a new item to the API
